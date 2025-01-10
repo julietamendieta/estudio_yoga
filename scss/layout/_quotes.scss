@@ -22,8 +22,14 @@
 .img-quote{
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin: 0 30px;
+    gap: 20px;
+    @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+    }
     img{
         width: 500px;
         @include media-query-tablet(){
