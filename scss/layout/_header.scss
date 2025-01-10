@@ -15,6 +15,14 @@ header{
             font-family: 'Yellowtail';
             color: var(--main-color);
             font-size: 100px;
+            @include media-query-mobile(){
+                font-size: 50px;
+            }
+        }
+        img{
+            @include media-query-mobile(){
+                width: 80px;
+            }
         }
     }
     .header-links{
@@ -30,6 +38,9 @@ header{
                 box-shadow: 1px 1px 1px 1px var(--main-color);
                 border-radius: 10px;
             }
+        }
+        @include media-query-mobile(){
+            gap: 20px;
         }
     }
 }

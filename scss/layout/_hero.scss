@@ -5,6 +5,12 @@
         width: 450px;
         height: 300px;
     }
+    @include media-query-tablet(){
+        display: none;
+    }
+    @include media-query-mobile(){
+        display: none;
+    }
 }
 
 .info-free{
@@ -16,6 +22,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    text-align: center;
     .button-free{
         max-width: fit-content;
         padding: 8px 12px;

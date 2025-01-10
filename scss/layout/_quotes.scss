@@ -6,6 +6,12 @@
     .quote-text{
         font-size: 30px;
         color: var(--main-color);
+        @include media-query-tablet(){
+            font-size: 20px;
+        };
+        @include media-query-mobile(){
+            font-size: 20px;
+        }
     }
     .quote-author{
         font-size: 20px;
@@ -20,5 +26,11 @@
     align-items: center;
     img{
         width: 500px;
+        @include media-query-tablet(){
+            width: 400px;
+        };
+        @include media-query-mobile(){
+            width: 300px;
+        }
     }
 }
